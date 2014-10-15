@@ -14,7 +14,7 @@ exports.getClinical = function(args, next){
     });
 };
 
-exports.getAllClinical = function(args, next){
+exports.getClinicals = function(args, next){
     clinicalSchema.find({}, function(err, result){
         if(err){
             return next(err, null);
